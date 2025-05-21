@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Montaz_paneli.png" alt="firma usługowa">
+    </header>
+
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="kosty.html">Kalkulator kosztów</a>
+    </nav>
+
+    <main>
+        <h1>Kalkulator kosztów montażu</h1>
+        <label for="szerokość">Szerokość pomieszczenia [m]</label>
+        <input type="number" id="szerokosc" name="szerokosc">
+        <label for="dlugosc">Długość pomieszczenia [m]</label>
+        <input type="number" id="dlugosc" name="dlugosc">
+
+
+    <p>Typ panelu</p>
+
+    
+    <input type="radio" name="panel" id="pole1" value="Laminowane">
+    <label for="pole1">Panele laminowane</label><br>
+
+    <input type="radio" name="panel" id="pole2" value="Winylowe">
+    <label for="pole1">Panele winylowe</label><br>
+
+    <input type="radio" name="panel" id="pole3" value="Deska">
+    <label for="pole1">Deska podłogowa</label><br>
+
+    <button onclick="oblicz()">Oblicz</button>
+    <p id="wynik"></p>
+
+    </main>
+
+    <footer>
+        <h5>Autor strony: Marcel Matejak-Niemczuk</h5>
+    </footer>
+    
+</body>
+</html>
